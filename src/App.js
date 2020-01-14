@@ -9,22 +9,13 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import AddProduct from "./components/add-product.component";
 
-import ReactDOM from "react-dom";
-// import { Router, Route } from "react-router-dom";
-import { Provider,connect } from 'react-redux';
-import { createStore, applyMiddleware, bindActionCreators } from 'redux';
-import thunk from "redux-thunk";
-
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { getAllUsers } from './actions/users.actions';
 import TodoInput from './TodoInput';
 import AddCandidate from './components/add-candidate';
 import ListCandidate from './components/list-candidate';
 import EditCandidate from './components/edit-candidate';
-
-import stores from "./reducers";
-import history from "./history";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
